@@ -1,4 +1,4 @@
-//2017318:watanabe
+//2017318:watanabe1
 package com.example.madlax.touchex;
 import android.app.Activity;
 import android.os.Bundle;
