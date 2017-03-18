@@ -1,4 +1,4 @@
-//2017318:ohno
+//2017318:ohno2
 package com.example.madlax.touchex;
 import android.app.Activity;
 import android.os.Bundle;
