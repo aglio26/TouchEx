@@ -12,6 +12,20 @@ import android.graphics.Paint;
 /**
  * Created by madlax on 2017/02/17.
  */
+//目標：マップの描画
+//画面サイズの取得
+
+//原点の取得
+
+//スマホ上グリッドの取得
+
+//マップ定数と画像座標の紐付け
+
+//描画処理
+
+
+
+
 
 public class TouchView extends View {
     private HashMap<String, PointF> points = new HashMap<String, PointF>();
