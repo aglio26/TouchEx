@@ -37,6 +37,11 @@ public class TouchView extends View {
         display.getSize(point);
         return point;
     }
+    //セルサイズの決定
+    private int n = 3;//縦のセル数
+    private int m = 5;//横のセル数
+    int r;//セル一辺の長さ
+    public int r = Math.min(n/(point.x),m/(point.y));
     //原点の取得
     public int originX;//
     public int originY;//
