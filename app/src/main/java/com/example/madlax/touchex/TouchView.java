@@ -1,5 +1,6 @@
 package com.example.madlax.touchex;
 
+import android.app.Activity;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.view.View;
@@ -7,21 +8,13 @@ import android.content.Context;
 import java.util.HashMap;
 import android.view.MotionEvent;
 import android.graphics.PointF;
-import android.graphics.Paint;
+import android.graphics.Point;
+import android.view.Display;
 
 /**
  * Created by madlax on 2017/02/17.
  */
-//目標：マップの描画
-//画面サイズの取得
 
-//原点の取得
-
-//スマホ上グリッドの取得
-
-//マップ定数と画像座標の紐付け
-
-//描画処理
 
 
 
@@ -35,6 +28,35 @@ public class TouchView extends View {
         super(context);
         setBackgroundColor(Color.WHITE);
     }
+
+    //目標：マップの描画
+    //画面サイズの取得
+    public static Point getDisplaySize(Activity activity){
+        Display display = activity.getWindowManager().getDefaultDisplay();
+        Point point = new Point();
+        display.getSize(point);
+        return point;
+    }
+    //原点の取得
+    public int originX;//
+    public int originY;//
+    public void setOrigin(int x,int y){
+        originX = x;
+        originY = y;
+    }
+    //スマホ上グリッドの取得
+
+    //マップ定数と画像座標の紐付け
+
+    //描画処理
+
+
+
+
+
+
+
+
 
     //描画時に呼ばれる
     @Override
